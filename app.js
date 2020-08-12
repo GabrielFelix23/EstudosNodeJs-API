@@ -1,9 +1,13 @@
-const express = require("express")
-const app = express()
+const app = require('./config/server')
 
-app.get("/", (req, res) => {
-    res.send("Olá mundo!")
-})
+const rotaHome = require("./app/routes/home")
+rotaHome(app)
+
+const rotaFormInclusaoNoticia = require("./app/routes/formulario_inclusao_noticia")
+rotaFormInclusaoNoticia(app)
+
+const rotaNoticias = require("./app/routes/noticias")
+rotaNoticias(app)
 
 const porta = 3000
 app.listen(porta, () => {
