@@ -1,0 +1,19 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "site de noticias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielFelix23/EstudosNodeJs-API.git"
+  },
+  "author": "Gabriel Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielFelix23/EstudosNodeJs-API/issues"
+  },
+  "homepage": "https://github.com/GabrielFelix23/EstudosNodeJs-API#readme"
+}
