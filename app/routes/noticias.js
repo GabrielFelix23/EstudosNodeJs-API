@@ -1,12 +1,19 @@
 module.exports = (app) => {
-    const mysql = require("mysql")
-
-    const connection = mysql.createConnection({
-        
-    })
-
     app.get("/noticias", (req, res) => {
-        res.render("noticias/noticias")
+        const mysql = require("mysql")
+
+        const connection = mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            password: 'gfsjxhs123',
+            database: 'portal_noticias'
+        })
+
+        connection.query('select * from noticias', function(error,result) {
+            res.send(result)
+        })
+
+        //res.render("noticias/noticias")
     })
 }    
   
