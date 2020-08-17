@@ -14,4 +14,3 @@ module.exports = function(app) {
     console.log("O autolocad carregou o módulo de conexão com o banco")
     return connMySQL
 }
-      

@@ -7,7 +7,7 @@ module.exports = (app) => {
         connection.query('select * from noticias', function(error,result) {
             res.render("noticias/noticias", {noticias:result})
         })
-
     })
+    
 }    
   
