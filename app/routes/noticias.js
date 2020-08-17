@@ -3,8 +3,9 @@ module.exports = (app) => {
     app.get("/noticias", (req, res) => {
 
         const connection = app.config.dbConnecton()
+        const noticiasModel = app.app.models.noticiasModel
 
-        connection.query('select * from noticias', function(error,result) {
+        noticiasModel.getNoticias(connection, function(error,result) {
             res.render("noticias/noticias", {noticias:result})
         })
     })
