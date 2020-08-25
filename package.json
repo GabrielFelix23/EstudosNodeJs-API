@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/GabrielFelix23/EstudosNodeJs-API#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "consign": "^0.1.6",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
